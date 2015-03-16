@@ -4,18 +4,19 @@ public class Mouse {
 
     private boolean isPlugged;
 
-    Mouse() {
+    public Mouse() {
         isPlugged = true;
     }
 
-    public void plug(){
+    public void plug() {
         isPlugged = true;
     }
-    public void unplug(){
+
+    public void unplug() {
         isPlugged = false;
     }
 
-    public boolean isPlugged(){
+    public boolean isPlugged() {
         return isPlugged;
     }
 }

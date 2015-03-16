@@ -6,16 +6,18 @@ public class KeyboardAndMouse {
 
     /**
      * KeyboardAndMouse are keyboard and mouse, quelle surprise.
+     *
      * @param keyboard exactly that
-     * @param mouse exactly that
+     * @param mouse    exactly that
      */
-    KeyboardAndMouse(Keyboard keyboard, Mouse mouse){
+    public KeyboardAndMouse(Keyboard keyboard, Mouse mouse) {
         this.keyboard = keyboard;
         this.mouse = mouse;
     }
 
     /**
      * Return true if keyboard and mouse are connected, else false
+     *
      * @return see above
      */
     public boolean isPlugged() {

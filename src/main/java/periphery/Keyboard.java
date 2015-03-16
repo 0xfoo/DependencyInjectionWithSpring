@@ -4,19 +4,20 @@ public class Keyboard {
 
     private boolean isPlugged;
 
-    Keyboard() {
+    public Keyboard() {
         isPlugged = true;
     }
 
 
-    public void plug(){
+    public void plug() {
         isPlugged = true;
     }
-    public void unplug(){
+
+    public void unplug() {
         isPlugged = false;
     }
 
-    public boolean isPlugged(){
+    public boolean isPlugged() {
         return isPlugged;
     }
 }
