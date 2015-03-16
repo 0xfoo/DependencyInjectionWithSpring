@@ -50,16 +50,16 @@ public class PC {
     }
 
     public void printStatusReport() {
-        String internetStatus = isConnectedToTheInternet() ? "" : "not" + " connected.";
-        System.out.println("Internet is " + internetStatus);
+        String internetStatus = (isConnectedToTheInternet() ? "" : " not") + " connected.";
+        System.out.println("Internet is" + internetStatus);
 
-        String monitorStatus = isMonitorWorking() ? "" : "not" + " working.";
-        System.out.println("Monitor is " + monitorStatus);
+        String monitorStatus = (isMonitorWorking() ? "" : " not") + " working.";
+        System.out.println("Monitor is" + monitorStatus);
 
-        String keyboardAndMouseStatus = isKeyboardAndMousePluggedIn() ? "" : "not" + " plugged.";
-        System.out.println("Keyboard and Mouse are " + keyboardAndMouseStatus);
+        String keyboardAndMouseStatus = (isKeyboardAndMousePluggedIn() ? "" : " not") + " plugged.";
+        System.out.println("Keyboard and Mouse are" + keyboardAndMouseStatus);
 
-        String powerSupplyStatus = isPowerSupplied() ? "" : "not" + " supplied.";
-        System.out.println("Power is " + powerSupplyStatus);
+        String powerSupplyStatus = (isPowerSupplied() ? "" : " not") + " supplied.";
+        System.out.println("Power is" + powerSupplyStatus);
     }
 }
