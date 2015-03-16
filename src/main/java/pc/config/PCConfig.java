@@ -16,7 +16,7 @@ public class PCConfig {
     }
 
     @Bean
-    public InternetConnection internetConnection(){
+    public InternetConnection internetConnection() {
         return new InternetConnectionMock();
     }
 
@@ -36,12 +36,12 @@ public class PCConfig {
     }
 
     @Bean
-    public Keyboard keyboard(){
+    public Keyboard keyboard() {
         return new Keyboard();
     }
 
     @Bean
-    public Mouse mouse(){
+    public Mouse mouse() {
         return new Mouse();
     }
 }
