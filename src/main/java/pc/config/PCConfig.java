@@ -43,6 +43,7 @@ public class PCConfig {
     }
 
     @Bean
+    // KeyboardAndMouse is obviously stupid, it is just to show the nesting of injection
     public KeyboardAndMouse keyboardAndMouse() {
         return new KeyboardAndMouse(keyboard(), mouse());
     }
