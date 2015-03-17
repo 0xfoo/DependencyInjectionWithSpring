@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="pc" class="pc.PC">
+        <constructor-arg ref="internetConnection, monitor, keyboardAndMouse, powerSupply" />
+    </bean>
+
+    <bean id="internetConnection" class="internet.InternetConnection"/>
+    <bean id="monitor" class="periphery.Monitor"/>
+
+    <bean id="keyboardAndMouse" class="periphery.KeyboardAndMouse">
+        <constructor-arg ref="keyboard, mouse" />
+    </bean>
+    <bean id="keyboard" class="periphery.Keyboard"/>
+    <bean id="mouse" class="periphery.Mouse"/>
+
+    <bean id="powerSupply" class="periphery.PowerSupply"/>
+
+</beans>
