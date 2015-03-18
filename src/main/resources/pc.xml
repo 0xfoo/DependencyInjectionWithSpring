@@ -5,14 +5,18 @@
 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="pc" class="pc.PC">
-        <constructor-arg ref="internetConnection, monitor, keyboardAndMouse, powerSupply" />
+        <constructor-arg ref="internetConnection"/>
+        <constructor-arg ref="monitor"/>
+        <constructor-arg ref="keyboardAndMouse"/>
+        <constructor-arg ref="powerSupply"/>
     </bean>
 
-    <bean id="internetConnection" class="internet.InternetConnection"/>
+    <bean id="internetConnection" class="internet.InternetConnectionImpl"/>
     <bean id="monitor" class="periphery.Monitor"/>
 
     <bean id="keyboardAndMouse" class="periphery.KeyboardAndMouse">
-        <constructor-arg ref="keyboard, mouse" />
+        <constructor-arg ref="keyboard"/>
+        <constructor-arg ref="mouse"/>
     </bean>
     <bean id="keyboard" class="periphery.Keyboard"/>
     <bean id="mouse" class="periphery.Mouse"/>
